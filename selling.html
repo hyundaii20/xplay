@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Phone - Xplay</title>
+  <link rel="stylesheet" href="css/website.css">
+</head>
+<body>
+  <header>
+
+    <div class="logo">
+      <img src="img/xplay.jpeg" alt="Xplay Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="website.html">Home</a></li>
+        <li><a href="browsing.html">Browse</a></li>
+        <li><a href="selling.html">Sell Your Phone</a></li>
+        <li><a href="shoppingcart.html">Shopping Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+
+    <h1>Sell Your Phone</h1>
+    <h2> </h2>
+    <h3>Welcome to trade ins!</h3>
+    <br>
+    <p>Upload the front, back and four corners of your device and submit them in order to
+        be contacted with a quote.
+    </p>
+    <h4>Before uploading your images, please help us with a few details regarding your device.</h4>
+    <br>
+    <h5>Only check the following options if your device is a phone.</h5>
+
+    <input type="checkbox" id="1" name="1">
+    <label for="1">Does your device turn on?</label><br>
+
+    <input type="checkbox" id="2" name="2">
+    <label for="2">Do all hardware buttons work on your device?</label><br>
+
+    <input type="checkbox" id="3" name="3">
+    <label for="3">Does the flash work on your device?</label><br>
+
+    <input type="checkbox" id="4" name="4">
+    <label for="4">Do both front and rear cameras work on your device?</label><br>
+
+    <input type="checkbox" id="5" name="5">
+    <label for="5">Is your device clear of any dead pixels?</label><br>
+    <br>
+
+    <h5>Only check these options if your device is a console.</h5>
+
+    <input type="checkbox" id="6" name="6">
+    <label for="6">Does your device turn on?</label><br>
+
+    <input type="checkbox" id="7" name="7">
+    <label for="7">Do all hardware buttons work on your device?</label><br>
+
+    <input type="checkbox" id="8" name="8">
+    <label for="8">Does the controller link up with the device?</label><br>
+
+    <input type="checkbox" id="9" name="9">
+    <label for="9">Is the HDMI cable included?</label><br>
+    <br>
+    <p>Please ensure that all images are uploaded clearly and all questions are answered truthfully to ensure an accurate quote.</p>
+    <br>
+    <p>Enter the mobile number you would like to be contacted on: <input type="text" placeholder="08"></p>
+    <br>
+
+    <form action="submit_sell.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="phone_image" accept="image/*">
+     
+      
+      <button type="button" id="submitBtn">Submit</button>
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

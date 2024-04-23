@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Xplay</title>
+  <link rel="stylesheet" href="css/website.css">
+</head>
+<body onload="loadCartItems()">
+  <header>
+    <div class="logo">
+      <img src="img/xplay.jpeg" alt="Xplay Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="website.html">Home</a></li>
+        <li><a href="browsing.html">Browse</a></li>
+        <li><a href="selling.html">Sell Your Phone</a></li>
+        <li><a href="shoppingcart.html">Shopping Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-4">
+      <h2 class="text-center">Shopping Cart</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total Cost:</th>
+            <td id="total-price">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <button onclick="clearCart()">Clear Cart</button> 
+  </main>
+</body>
+</html>
+
+  <h2>Enter Your Card Details</h2>
+  
+  <form>
+   
+    <label for="cardholder-name">Cardholder's Name:</label>
+    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="James Murphy" required>
+    <br>
+
+   
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9123 4567" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+    <br>
+
+    
+    <label for="expiry-date">Expiry Date:</label>
+    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
+    <br>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" placeholder="765" pattern="[0-9]{3}" required>
+    <br>
+
+    <h2>Enter Your Address</h2>
+    <label for="house-number">House Number:</label>
+    <input type="text" id="house-number" name="house-number" placeholder="57" required>
+    <br>
+
+    <label for="street">Street Line 1:</label>
+    <input type="text" id="street" name="street" placeholder="Main St" required>
+    <br>
+
+    <label for="street">Street Line 2:</label>
+    <input type="text" id="street" name="street" placeholder="Blanchardstown" required>
+    <br>
+
+
+    <label for="postal-code">Postal Code:</label>
+    <input type="text" id="postal-code" name="postal-code" placeholder="H91" required>
+    <br>
+
+    <label for="region">Region:</label>
+    <select id="region" name="region" required>
+      <option value="" disabled selected>Select your region</option>
+      <option value="Connacht">Connacht</option>
+      <option value="Leinster">Leinster</option>
+      <option value="Ulster">Ulster</option>
+      <option value="Munster">Munster</option>
+    </select>
+    <br>
+
+   
+    <input type="submit" value="Submit">
+  </form>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; 
+}
+
+header {
+  background-color: #521ad4; 
+  color: #fff; 
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #ffc107; 
+}
+
+header .logo img {
+  height: 60px; 
+  width: auto;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffc107; 
+}
+
+main {
+  padding: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.introduction {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.introduction h1 {
+  color: #343a40;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  color: #6c757d;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.product-images {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trade-in-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.trade-in-section h2 {
+  color: #343a40;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.trade-in-section p {
+  color: #6c757d;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.trade-in-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.trade-in-details .details-left,
+.trade-in-details .details-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.trade-in-details .details-left {
+  border-right: 1px solid #ccc;
+}
+
+.trade-in-details .details-right {
+  text-align: center;
+}
+
+.trade-in-details p {
+  margin: 10px 0;
+}
+
+.trade-in-details a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #ffc107;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.trade-in-details a:hover {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+
+
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10 10 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="submit"],
+select {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
